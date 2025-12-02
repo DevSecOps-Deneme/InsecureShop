@@ -48,7 +48,7 @@ jobs:
           socket cdxgen -t gradle -t kotlin -t scala -o socket.cdx.json --install-deps --lifecycle build
       
       - name: Install Socket CLI
-        run: pip install socketsecurity --upgrade
+        run: pip install socketsecurity uv --upgrade
       
       - name: Run Socket Security Scan
         env:
